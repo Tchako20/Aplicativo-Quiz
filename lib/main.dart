@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart';
-import 'resultados.dart';
-import 'quiz.dart';
+import 'view/homepage.dart';
+import 'view/resultados.dart';
+import 'controller/quiz.dart';
 
 void main() {
   // runApp( Resultado(acertos: 3,));
@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.indigo),
         initialRoute: '/MyApp',
         routes: {
